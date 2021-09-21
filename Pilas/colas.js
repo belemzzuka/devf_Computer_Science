@@ -54,7 +54,7 @@ console.log(colaAlumnos.isEmpty()); //false
 colaAlumnos.print(); //[Sofia, Belem, Karen, Hugo, Paco, Luis]
 
 console.log(colaAlumnos.front()); //Sofia
-console.log(colaAlumnos.dequeue()); //Sofia
-console.log(colaAlumnos.front()); //Belem
-console.log(colaAlumnos.back()); //Luis
-console.log(colaAlumnos.size()); //5
+console.log(colaAlumnos.dequeue()); //Elimino a Sofia
+console.log(colaAlumnos.front()); //Belem, despues del dequeue
+console.log(colaAlumnos.back()); //Luis, el dequeue no le afecta
+console.log(colaAlumnos.size()); //5 despues del dequeue
