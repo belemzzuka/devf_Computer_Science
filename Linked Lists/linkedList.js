@@ -1,5 +1,4 @@
 //Crear clase nodo
-
 class Node{
     constructor(data){
         this.data = data; //Lo que vamos a guardar
@@ -27,6 +26,21 @@ class LinkedList{
             node.next = this.head; //Este nuevo nodo se conectaria con el actual head
             this.head = node; //La cabeza ahora es este nodo nuevo
         }
+    }
+
+    delete(data){
+        let actualNode = this.head;
+        let auxNode = null; //Nos ayuda a almacenar el nodo a reconectar
+        if(actualNode.data === data){ //Si el nodo que estamos buscando está en la cabeza
+            this.head = actualNode.next;
+        } else {
+            while(actualNode.data !== data && actualNode !== null){ //Todo lo de abajo mientras sean diferentes al que queremos borrar
+                auxNode = currentNode; //Guardar el nodo actual en el auxiliar
+                currentNode = currentNode.next; //Asigna el currentNode al siguiente
+            }
+            auxNode.next = currentNode.next; //Enlaza el que está volando con el siguente del que se borró
+        }
+
     }
 
     print(){
