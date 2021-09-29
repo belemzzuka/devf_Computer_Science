@@ -33,4 +33,4 @@ alumnos.forEach(item => console.log(item));
 /*
 1. Los parentesis son para los parametros. si solo es un parametro, puedes omitir los parentesis. Si no tiene parametros, se quedan vacios ()
 2. La flecha es obligatoria ( => )
-3. 
+3. */
